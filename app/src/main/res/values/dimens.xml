@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="spacer_small_height">20dp</dimen>
+    <dimen name="spacer_small_width">20dp</dimen>
+</resources>

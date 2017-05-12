@@ -1,0 +1,9 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="250dp"
+    android:minHeight="60dp"
+    android:updatePeriodMillis="0"
+    android:previewImage="@drawable/preview_xl"
+    android:initialLayout="@layout/widget_extra_large"
+    android:configure="blue.dave.tab.TABConfigureActivity">
+</appwidget-provider>
+

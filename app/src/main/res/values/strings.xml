@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="app_name" translatable="false">TAB</string>
+    <string name="app_preferences" translatable="false">blue.dave.tab.PREFERENCES</string>
+
+    <string name="widget_xlarge_name">TAB - Full</string>
+    <string name="widget_large_name">TAB - Condensed</string>
+    <string name="widget_medium_name">TAB - Punch</string>
+    <string name="widget_small_name">TAB - Mini</string>
+
+    <string name="configure_intro">To make use of TAB we will need the ADP credentials for an account.\n\nIf you have used the mobile application to set up an ADP pin, this will be needed in place of your password.\n\nSwipe to begin!</string>
+    <string name="configure_exit">Exit</string>
+    <string name="configure_continue">Continue</string>
+    <string name="configure_subtitle_intro">Welcome</string>
+    <string name="configure_subtitle_credentials">Credentials</string>
+    <string name="configure_username_hint">ADP User Name</string>
+    <string name="configure_password_hint">ADP Password or Pin</string>
+    <string name="configure_set">Set</string>
+
+    <string name="tab_hours_placeholder">Loading</string>
+    <string name="tab_punch_text">Punch</string>
+    <string name="tab_punch_desc">ADP Punch</string>
+    <string name="tab_status_placeholder">CLOCKED OUT</string>
+    <string name="tab_refresh_desc">Refresh ADP status</string>
+
+    <string name="error_missing_credentials">Missing Credentials</string>
+    <string name="error_account_locked">Locked Account</string>
+    <string name="error_invalid_credentials">Password Failed</string>
+
+    <string name="error_title">ERROR</string>
+    <string name="error_internal_error_message">Internal Error</string>
+
+    <string name="status_undetermined">Punch Completed</string>
+    <string name="status_undetermined_subtitle"> </string>
+
+    <string name="status_clocked_in">CLOCKED IN</string>
+    <string name="status_clocked_out">CLOCKED OUT</string>
+    <string name="status_hours_suffix">" Hours"</string>
+    <string name="status_pending_clock_out">CLOCKING OUT..</string>
+    <string name="status_pending_clock_in">CLOCKING IN..</string>
+    <string name="status_pending_undetermined">PUNCHING..</string>
+    <string name="status_pending_status">Refreshing..</string>
+
+    <string name="error_auth_username">Please enter a user name.</string>
+    <string name="error_auth_password">Please enter a password.</string>
+    <string name="configure_use_location_label">Allow for ADP Location Services</string>
+    <string name="configure_pending">Pending</string>
+    <string name="configure_pending_subtitle">Awaiting Configuration</string>
+
+    <!-- Debug Activity -->
+    <string name="title_activity_tab_debug">Debug TAB</string>
+    <string name="debug_global_updater_label">Global Updater</string>
+    <string name="debug_task_label">Tab Task - Debug</string>
+
+
+</resources>

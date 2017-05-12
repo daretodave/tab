@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/appwidget_dark_bg_clickable">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/tab_loader"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentBottom="false"
+                android:indeterminate="true"
+                android:indeterminateBehavior="cycle"
+                android:indeterminateOnly="false"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tab_punch_text"
+                android:id="@+id/tab_punch"
+                android:background="@drawable/appwidget_button_center"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:visibility="visible"
+                android:gravity="center"
+                android:src="@drawable/small"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:contentDescription="@string/tab_punch_desc" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

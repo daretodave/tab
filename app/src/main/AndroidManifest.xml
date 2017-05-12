@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="blue.dave.tab">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- XL Widget -->
+        <receiver
+            android:name=".providers.TABExtraLargeProvider"
+            android:label="@string/widget_xlarge_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_xlarge" />
+        </receiver>
+
+        <!-- LG Widget -->
+        <receiver
+            android:name=".providers.TABLargeProvider"
+            android:label="@string/widget_large_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_large" />
+        </receiver>
+
+        <!-- MD Widget -->
+        <receiver
+            android:name=".providers.TABMediumProvider"
+            android:label="@string/widget_medium_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_medium" />
+        </receiver>
+
+        <!-- SM Widget -->
+        <receiver
+            android:name=".providers.TABSmallProvider"
+            android:label="@string/widget_small_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_provider_small" />
+        </receiver>
+
+        <!-- Shared configuration activity -->
+        <activity android:name=".TABConfigureActivity">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Shared update credentials activity -->
+        <activity android:name=".TABCredentialsActivity"></activity>
+
+        <!-- TAB Server communication service -->
+        <service
+            android:name=".TABTaskService"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>
